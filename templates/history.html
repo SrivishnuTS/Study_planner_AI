@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card history-card">
+    <h2>Prediction History</h2>
+    <div class="table-responsive">
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Study (h)</th>
+                    <th>Break (h)</th>
+                    <th>Sleep (h)</th>
+                    <th>Focus</th>
+                    <th>Distraction</th>
+                    <th>Predicted Pattern</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamically populated by script.js -->
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

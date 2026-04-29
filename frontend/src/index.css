@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F8F9FB;
+    --card: #FFFFFF;
+    --text: #1F2937;
+    --text-secondary: #4B5563;
+    --primary: #1E3A8A;
+    --accent: #C9A227;
+    --border: #E5E7EB;
+    --muted: #F3F4F6;
+  }
+  .dark {
+    --background: #111827;
+    --card: #1F2937;
+    --text: #F9FAFB;
+    --text-secondary: #D1D5DB;
+    --primary: #1E3A8A;
+    --accent: #C9A227;
+    --border: #374151;
+    --muted: #273244;
+  }
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .classic-card {
+    @apply bg-card border border-border rounded-lg shadow-sm p-6 transition-shadow hover:shadow-md;
+  }
+  .btn-primary {
+    @apply bg-primary hover:opacity-90 text-white font-medium py-2.5 px-5 rounded-md transition-opacity active:opacity-80 disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply bg-muted text-text hover:bg-border border border-border font-medium py-2.5 px-5 rounded-md transition-opacity active:opacity-80 disabled:opacity-50;
+  }
+  .input-classic {
+    @apply w-full bg-card border border-border rounded-md p-2.5 text-sm font-medium text-text focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-colors;
+  }
+}
