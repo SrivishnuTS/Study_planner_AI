@@ -13,3 +13,4 @@ flask-jwt-extended==4.6.0
 bcrypt==4.1.2
 flake8==6.1.0
 requests==2.31.0
+setuptools>=65.0.0
