@@ -1,269 +1,49 @@
 {
-    "chosen_model": "RandomForest",
-    "timestamp": "2026-04-28T14:48:02.435873",
-    "models_compared": {
-        "RandomForest": {
-            "accuracy": 0.9916666666666667,
-            "classification_report": {
-                "Deep Work": {
-                    "precision": 1.0,
-                    "recall": 0.975,
-                    "f1-score": 0.9873417721518987,
-                    "support": 40.0
-                },
-                "Pomodoro": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 40.0
-                },
-                "Spaced Repetition": {
-                    "precision": 0.975609756097561,
-                    "recall": 1.0,
-                    "f1-score": 0.9876543209876543,
-                    "support": 40.0
-                },
-                "accuracy": 0.9916666666666667,
-                "macro avg": {
-                    "precision": 0.991869918699187,
-                    "recall": 0.9916666666666667,
-                    "f1-score": 0.991665364379851,
-                    "support": 120.0
-                },
-                "weighted avg": {
-                    "precision": 0.9918699186991871,
-                    "recall": 0.9916666666666667,
-                    "f1-score": 0.9916653643798509,
-                    "support": 120.0
-                }
-            }
-        },
-        "LogisticRegression": {
-            "accuracy": 0.975,
-            "classification_report": {
-                "Deep Work": {
-                    "precision": 1.0,
-                    "recall": 0.925,
-                    "f1-score": 0.961038961038961,
-                    "support": 40.0
-                },
-                "Pomodoro": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 40.0
-                },
-                "Spaced Repetition": {
-                    "precision": 0.9302325581395349,
-                    "recall": 1.0,
-                    "f1-score": 0.963855421686747,
-                    "support": 40.0
-                },
-                "accuracy": 0.975,
-                "macro avg": {
-                    "precision": 0.9767441860465116,
-                    "recall": 0.975,
-                    "f1-score": 0.9749647942419027,
-                    "support": 120.0
-                },
-                "weighted avg": {
-                    "precision": 0.9767441860465117,
-                    "recall": 0.975,
-                    "f1-score": 0.9749647942419026,
-                    "support": 120.0
-                }
-            }
-        }
-    },
-    "classes": [
-        "Deep Work",
-        "Pomodoro",
-        "Spaced Repetition"
-    ],
+    "accuracy": 1.0,
+    "model_version": "test-v1",
+    "training_timestamp": "2026-04-29T08:35:30.322614",
+    "model_type": "RandomForestClassifier",
+    "num_samples": 30,
     "feature_importances": [
-        {
-            "feature": "focus_score",
-            "importance": 0.119
-        },
-        {
-            "feature": "study_hours",
-            "importance": 0.1007
-        },
-        {
-            "feature": "previous_score",
-            "importance": 0.0961
-        },
-        {
-            "feature": "break_ratio",
-            "importance": 0.0946
-        },
-        {
-            "feature": "sleep_focus_ratio",
-            "importance": 0.0852
-        },
-        {
-            "feature": "sleep_hours",
-            "importance": 0.0784
-        },
-        {
-            "feature": "energy_level_Low",
-            "importance": 0.0571
-        },
-        {
-            "feature": "distraction_level_high",
-            "importance": 0.0564
-        },
-        {
-            "feature": "distraction_penalty",
-            "importance": 0.0468
-        },
-        {
-            "feature": "study_goal_type_Revision",
-            "importance": 0.0393
-        },
-        {
-            "feature": "course_difficulty_high",
-            "importance": 0.036
-        },
-        {
-            "feature": "study_goal_type_Concept Learning",
-            "importance": 0.0351
-        },
-        {
-            "feature": "weekend_flag",
-            "importance": 0.0332
-        },
-        {
-            "feature": "break_time",
-            "importance": 0.0323
-        },
-        {
-            "feature": "energy_level_High",
-            "importance": 0.0256
-        },
-        {
-            "feature": "distraction_level_low",
-            "importance": 0.014
-        },
-        {
-            "feature": "efficiency_base",
-            "importance": 0.0103
-        },
-        {
-            "feature": "day_of_week_Saturday",
-            "importance": 0.0078
-        },
-        {
-            "feature": "day_of_week_Sunday",
-            "importance": 0.0059
-        },
-        {
-            "feature": "course_difficulty_low",
-            "importance": 0.0055
-        },
-        {
-            "feature": "study_goal_type_Exam Preparation",
-            "importance": 0.004
-        },
-        {
-            "feature": "day_of_week_Wednesday",
-            "importance": 0.003
-        },
-        {
-            "feature": "day_of_week_Thursday",
-            "importance": 0.0017
-        },
-        {
-            "feature": "energy_level_Medium",
-            "importance": 0.0017
-        },
-        {
-            "feature": "day_of_week_Monday",
-            "importance": 0.0016
-        },
-        {
-            "feature": "day_of_week_Friday",
-            "importance": 0.0013
-        },
-        {
-            "feature": "distraction_level_medium",
-            "importance": 0.0011
-        },
-        {
-            "feature": "course_difficulty_medium",
-            "importance": 0.0011
-        },
-        {
-            "feature": "day_of_week_Tuesday",
-            "importance": 0.001
-        },
-        {
-            "feature": "course_name_Operating Systems",
-            "importance": 0.0006
-        },
-        {
-            "feature": "time_of_day_Night",
-            "importance": 0.0005
-        },
-        {
-            "feature": "course_name_Algorithms",
-            "importance": 0.0004
-        },
-        {
-            "feature": "course_name_Artificial Intelligence",
-            "importance": 0.0004
-        },
-        {
-            "feature": "course_name_Physics",
-            "importance": 0.0004
-        },
-        {
-            "feature": "course_name_Software Engineering",
-            "importance": 0.0004
-        },
-        {
-            "feature": "course_name_DBMS",
-            "importance": 0.0003
-        },
-        {
-            "feature": "course_name_Data Structures",
-            "importance": 0.0003
-        },
-        {
-            "feature": "time_of_day_Morning",
-            "importance": 0.0003
-        },
-        {
-            "feature": "course_name_Cyber Security",
-            "importance": 0.0002
-        },
-        {
-            "feature": "course_name_Machine Learning",
-            "importance": 0.0002
-        },
-        {
-            "feature": "course_name_Chemistry",
-            "importance": 0.0001
-        },
-        {
-            "feature": "course_name_Cloud Computing",
-            "importance": 0.0001
-        },
-        {
-            "feature": "course_name_Mathematics",
-            "importance": 0.0001
-        },
-        {
-            "feature": "course_name_Web Development",
-            "importance": 0.0001
-        },
-        {
-            "feature": "time_of_day_Afternoon",
-            "importance": 0.0001
-        },
-        {
-            "feature": "course_name_General",
-            "importance": 0.0
-        }
+        [
+            "break_ratio",
+            0.14664017865266224
+        ],
+        [
+            "focus_score",
+            0.09877264928666447
+        ],
+        [
+            "break_time",
+            0.0901092201664504
+        ],
+        [
+            "distraction_penalty",
+            0.0795790696779958
+        ],
+        [
+            "sleep_focus_ratio",
+            0.07521611777687177
+        ],
+        [
+            "sleep_hours",
+            0.06965039112593649
+        ],
+        [
+            "previous_score",
+            0.06637828826830973
+        ],
+        [
+            "study_hours",
+            0.0631908761945752
+        ],
+        [
+            "efficiency_base",
+            0.01808278053196878
+        ],
+        [
+            "weekend_flag",
+            0.007497475659031379
+        ]
     ]
 }
